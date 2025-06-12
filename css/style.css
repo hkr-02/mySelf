@@ -1,0 +1,322 @@
+/* ヘッダー */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 180px;
+  padding: 0 100px;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  height: 100%;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header-nav-item {
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #d4296d;
+}
+
+
+nav .header-nav .header-nav-item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #d4296d;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .header-nav .header-nav-item:hover::after {
+  width: 100%;
+}
+
+.header-nav-item:visited {
+  color: #d4296d;
+}
+
+/* スライダー内 */
+
+.your-class {
+  position: relative;
+}
+
+h1.heading {
+  font-size: 120px;
+  background-color: rgb(23 22 22 / .4);
+  color: #e9e7e7;
+  position: absolute;
+  top: 170px;
+  margin-left: 3%;
+  padding: 50px 180px 50px 90px;
+}
+
+/* 共通パーツ */
+.main-wrapper {
+  padding: 0 100px;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 42px;
+  padding: 80px 0 40px;
+}
+
+/* 自己紹介 */
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.self-image img {
+  height: 400px;
+}
+
+.about-heading {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* スキル */
+.main-nav-list {
+  list-style-type: none;
+  background: #f6eef3;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 35px;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.p_lang {
+  font-size: 24px;
+  font-weight: 800;
+  color: #d4296d;
+  letter-spacing: 3px;
+}
+
+.p_lang + p {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 18px;
+}
+
+.skill img {
+  vertical-align: -8px;
+  padding-right: 16px;
+}
+
+/* 問い合わせ */
+.content {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.content p {
+  text-align: center;
+}
+
+.input-wrap {
+  width: 100%;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.required {
+  font-size: 12px;
+  background-color: #df0c0c;
+  border-radius: 5px;
+  color: #fff;
+  padding: 2px 5px;
+  vertical-align: text-bottom;
+}
+
+.any {
+  font-size: 16px;
+}
+
+input, textarea {
+  width: 100%;
+  border-bottom: 1px solid #d4296d;
+  margin: 7px 0 20px;
+  padding: 5px;
+}
+
+textarea {
+  height: 140px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #2096f3;
+    border-radius: 5px;
+}
+
+.btn-wrap {
+  width: 20%;
+  margin: 40px auto 100px;
+}
+
+.btn-wrap button {
+  width: 100%;
+  text-align: center;
+  background: #f6eef3;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f6eef3;
+}
+
+@media screen and (max-width: 810px) {
+  /* ヘッダー */
+  .header-wrapper {
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 30px;
+  }
+
+
+  .header-nav {
+    gap: 20px;
+  }
+
+  .header-nav-item {
+    font-size: 16px;
+  }
+  /* スライダー */
+  .slick-slide img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  h1.heading {
+    font-size: 54px;
+    top: 130px;
+    margin-left: 3%;
+    padding: 30px 100px 40px 30px;
+  }
+
+  .slick-prev, .slick-next {
+    width: 34px;
+  }
+
+  /* 共通パーツ */
+  .main-wrapper {
+    padding: 0 10px;
+  }
+
+  .sub-heading {
+    font-size: 26px;
+    padding: 30px 0 10px;
+  }
+
+  /* 自己紹介 */
+  .section-wrapper {
+    display: block;
+  }
+
+  .self-image {
+    text-align: center;
+  }
+
+  .self-image img {
+    height: 40vh;
+  }
+
+  .about-heading {
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* スキル */
+  .main-nav-list {
+    padding: 16px;
+    margin: 20px 40px;
+  }
+
+  .p_lang {
+    font-size: 20px;
+  }
+
+  .p_lang + p {
+    font-size: 16px;
+  }
+
+  /* お問い合わせ */
+  .content {
+    width: 90%;
+  }
+
+  .input-wrap {
+    margin: 8px auto;
+    font-size: 16px;
+  }
+
+  .required {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+
+  .any {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    margin: 4px 0 0;
+    padding: 3px;
+    font-size: .8em;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  .btn-wrap {
+    width: 40%;
+    margin: 20px auto 40px;
+    font-size: 16px;
+  }
+
+  .btn-wrap button {
+    padding: 10px 15px;
+  }
+
+  /* フッター */
+  footer {
+    padding: 8px 0;
+  }
+}

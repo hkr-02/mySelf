@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 文字コードの指定 -->
+  <meta charset="UTF-8">
+  <!-- レスポンシブ表示のための記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 検索結果に掲載しない設定 -->
+  <meta name="robots" content="noindex">
+  <!-- サイトのアイコンの設定 -->
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- サイトのタイトル -->
+  <title>My Portfolio Site | HikariIkeda</title>
+  <!-- サイトの概要 -->
+  <meta name="description" content="池田陽加里のポートフォリオサイトです。">
+  <!-- google fontsのリンク -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="./css/ress.min.css">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="header-wrapper">
+    <div class="header-logo"><img src="./img/logo.png" alt="HikariIkeda"></div>
+    <nav>
+      <ul class="header-nav">
+        <li class="header-nav-list"><a href="#mySelf" class="header-nav-item">自己紹介</a></li>
+        <li class="header-nav-list"><a href="#skills" class="header-nav-item">スキル</a></li>
+        <li class="header-nav-list"><a href="#contact" class="header-nav-item">お問合せ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="your-class">
+  <div>
+    <img src="./img/slide_01.jpg" alt="">
+    <h1 class="heading">Hikari<br>&nbsp;&nbsp;Ikeda</h1>
+  </div>
+  <div>
+    <img src="./img/slide_02.jpg" alt="">
+    <h1 class="heading">Hikari<br>&nbsp;&nbsp;Ikeda</h1>
+  </div>
+</div>
+
+<section class="mySelf main-wrapper">
+  <h2 class="sub-heading" id="mySelf">自己紹介</h2>
+  <div class="section-wrapper">
+    <div class="self-image"><img src="./img/usericon.png" alt="イメージ写真"></div>
+    <div class="about">
+      <h3 class="about-heading">池田&nbsp;陽加里</h3>
+      <p class="about-text">1993年山梨県生まれ、山梨県在住。</p>
+      <p class="about-text">山梨学院大学卒業後、営業事務やECサイト運営を経験。</p>
+      <p class="about-text">Ｗｅｂサイト制作のスキル習得中...</p>
+    </div>
+  </div>
+</section>
+<section class="skill main-wrapper">
+  <h2 class="sub-heading" id="skills">スキル</h2>
+  <ul class="nav-wrapper section-wrapper">
+    <li class="main-nav-list">
+      <p class="p_lang"><img src="./img/html5.png" alt="html5">HTML</p>
+      <p>基本的なＨＴＭＬ5の理解と使用ができます。</p>
+    </li>
+    <li class="main-nav-list">
+      <p class="p_lang"><img src="./img/css3_full.png" alt="css3" srcset="">CSS</p>
+      <p>flexboxを使用したレスポンシブデザインが可能です。</p>
+    </li>
+    <li class="main-nav-list">
+      <p class="p_lang"><img src="./img/javascript_1.png" alt="javascript">JavaScript</p>
+      <p>基本の文法、関数や配列・オブジェクト等を理解できています。</p>
+    </li>
+  </ul>
+</section>
+<section class="contact-form main-wrapper">
+  <h2 class="sub-heading contact-heading" id="contact">お問い合わせ</h2>
+        <div class="content">
+        <p>下記フォームよりお問い合わせください。</p>
+        <form action="#">
+          <div class="input-wrap">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="input-wrap">
+            <label for="mymail"
+            >メールアドレス <span class="required">必須</span></label
+            >
+            <input id="mymail" type="email" name="mymail" />
+          </div>
+        <div class="input-wrap">
+          <label for="tel">電話番号<span class="any">(任意)</span></label>
+          <input id="tel" type="tel" name="phonenumber" />
+        </div>
+        <div class="input-wrap">
+          <label for="matter">内容</label>
+          <textarea name="content" id="matter"></textarea>
+        </div>
+        <div class="input-wrap btn-wrap">
+          <button type="submit" onclick="location.href='#'">送信</button>
+        </div>
+      </form>
+      </div>
+</section>
+
+    <footer>
+        <p><small>© 2025<span id="current-year"></span> Hikari&nbsp;Ikeda | All Rights Reserved.</small></p>
+    </footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.your-class').slick({});
+});
+</script>
+</body>
+</html>
