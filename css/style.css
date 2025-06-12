@@ -2,7 +2,7 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 180px;
+  height: 125px;
   padding: 0 100px;
 }
 
